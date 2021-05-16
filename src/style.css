@@ -1,0 +1,242 @@
+/* @import url('https://fonts.cdnfonts.com/css/digital-numbers'); */
+
+.timer-wrapper {
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00263a;
+  z-index: 3;
+  transition: all 0.5s;
+  font-weight: 400px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 15% 10% 5% 25%;
+  margin: 0 auto;
+  height: 65px;
+  width: 100vw;
+}
+.grid-item {
+  margin: -1px -1px 0 -1px;
+}
+
+.item-timer {
+  display: grid;
+  grid-template-columns: auto 40px auto 25px auto 25px auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 0 45px 0 0;
+}
+
+.label {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+  height: 35px;
+  text-transform: uppercase;
+  margin: 3px 0;
+}
+
+.number {
+  font-size: 80px;
+  line-height: 96px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  font-family: 'Digital Numbers', sans-serif;
+}
+
+/* ========================================================= */
+.timer {
+  display: inline-flex;
+  width: 500px;
+  flex-direction: row;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  color: #212121;
+  border-radius: 2px;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  margin-left: 4px;
+  margin-right: 4px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #3f51b5;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.value {
+  margin-bottom: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.label {
+  margin-bottom: 25px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.active {
+  background-color: #2196f3;
+}
+
+/* .item-text {
+  padding: 9px 0 5px 30px;
+  background-color: #f0f0f0;
+  transform: skew(-45deg);
+} */
+/* .item-code {
+  z-index: 3;
+  background-color: #f0f0f0;
+  transform: skew(-45deg);
+  height: 75px;
+} */
+/* div.code {
+  font-weight: bold;
+  font-size: undefined;
+  line-height: 22px;
+  align-items: center;
+  margin-left: undefined;
+} */
+/* p.withcode {
+  font-size: 12px;
+  line-height: 14.4x;
+  margin-top: 10px;
+}
+p.done {
+  font-size: 9px;
+  line-height: 10.8px;
+  opacity: 0;
+} */
+/* .svg-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  justify-content: space-between !important;
+  border: 1px dashed #00263a;
+  width: 121px;
+  margin: 3px 0;
+  align-items: center;
+} */
+/* div.icon {
+  margin: -1px;
+  height: 30px;
+  width: 30px;
+  background-image: url('https://upload.snrcdn.net/a2bf7822fbb6654295e7e1e109c2a9b011b1ffd7/default/origin/073652d95cd75491028ac77a696092b2.svg');
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+  background-position: center;
+  box-sizing: content-box;
+  transition: all 0.2s;
+  overflow: hidden;
+} */
+
+/* .colon {
+  font-size: calc(25px * 0.625);
+  line-height: calc(38px * 0.625);
+  margin-top: 10px;
+} */
+
+/* .text-wrapper {
+  transform: skew(45deg);
+  text-align: left;
+  color: #00263a;
+} */
+
+/* span.discount-size {
+  font-weight: bold;
+  font-size: 44.47px;
+  line-height: 40px;
+  align-items: center;
+}
+
+span.percent {
+  font-size: 32.5px;
+  font-weight: 700;
+} */
+
+/* p.text1 {
+  font-size: 18px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+} */
+/* 
+p.text2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #da291c;
+}
+p.text3 {
+  font-size: 9px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+p.text-100 {
+  color: #da291c;
+  font-weight: bold;
+  z-index: 4;
+  transform: skew(45deg);
+}
+span.text-big {
+  font-size: 60px;
+}
+span.text-small {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: underline;
+  display: inline;
+  color: #00263a;
+}
+a:hover {
+  color: #da291c;
+}
+.dc-close,
+a,
+.svg-item {
+  cursor: pointer;
+}
+.item-button {
+  background-color: #f0f0f0;
+  transform: skew(-45deg);
+}
+.item-last {
+  background-color: #f0f0f0;
+  transform: skew(-45deg);
+}
+.dc-close {
+  text-align: end;
+  background-color: #f0f0f0;
+  color: #000;
+  transform: skew(-45deg);
+}
+.dc-close svg {
+  padding: 6.25px;
+  box-sizing: content-box;
+  transform: skew(45deg);
+} */
