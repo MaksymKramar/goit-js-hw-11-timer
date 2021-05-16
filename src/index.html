@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <!-- <div class="grid-item item-timer">
+      <div class="grid-item">
+        <div class="label">dni</div>
+        <div class="timer-input">
+          <div class="number" id="days">3</div>
+        </div>
+      </div>
+      <div class="grid-item nic">
+        <div class=""></div>
+        <div class=""></div>
+      </div>
+      <div class="grid-item">
+        <div class="label">godz.</div>
+        <div class="timer-input">
+          <div class="number" id="hrs1">0</div>
+          <div class="number" id="hrs2">4</div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="label"></div>
+        <div class="colon">:</div>
+      </div>
+      <div class="grid-item">
+        <div class="label">min.</div>
+        <div class="timer-input">
+          <div class="number" id="mins1">4</div>
+          <div class="number" id="mins2">1</div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="label"></div>
+        <div class="colon">:</div>
+      </div>
+      <div class="grid-item">
+        <div class="label">sek.</div>
+        <div class="timer-input">
+          <div class="number" id="sec1">1</div>
+          <div class="number" id="sec2">5</div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="timer" id="timer-1">
+      <div class="field">
+        <span class="value" data-value="days">11</span>
+        <span class="label">Days</span>
+      </div>
+    
+      <div class="field">
+        <span class="value" data-value="hours">11</span>
+        <span class="label">Hours</span>
+      </div>
+    
+      <div class="field">
+        <span class="value" data-value="mins">11</span>
+        <span class="label">Minutes</span>
+      </div>
+    
+      <div class="field">
+        <span class="value" data-value="secs">11</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
+</html>
